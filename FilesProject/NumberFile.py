@@ -1,4 +1,4 @@
-#Add nubmers from 1 to 100 to a file
+#nubmers from 0 to 100
 numberOutFile = open('numbers.txt', 'w')
 for x in range(1,101):
     numberOutFile.write(str(x)+'\n')

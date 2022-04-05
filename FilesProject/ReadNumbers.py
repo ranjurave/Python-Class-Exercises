@@ -1,4 +1,3 @@
-# Read and add all numbers in file
 numbersInFile = open('numbers.txt', 'r')
 total = 0
 for line in numbersInFile:
