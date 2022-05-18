@@ -18,4 +18,3 @@ class Student(Person):
 s1 = Student("Joe","Jae",2021, 45)
 s1.display_name()
 s1.display_grade()
-
