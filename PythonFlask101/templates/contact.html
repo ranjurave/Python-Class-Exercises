@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Contact Form</h2>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+<form action="http://localhost:5000/contact" method="post">
+    {{form.hidden_tag()}}
+    <div>
+        {{form.name.label}} {{form.name}} <br><br>
+        {{form.gender.label}} {{form.gender}} <br><br>
+        {{form.address.label}} {{form.address}} <br><br>
+        {{form.email.label}} {{form.email}} <br><br>
+        {{form.age.label}} {{form.age}} <br><br>
+        {{form.language.label}} {{form.language}} <br><br>
+        {{form.submit}}
+    </div>
+</form>
+</body>
+
+</html>
